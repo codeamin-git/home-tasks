@@ -1,0 +1,97 @@
+/* used fonts from google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Manrope:wght@700&family=Poppins:wght@400;500;600;700&display=swap");
+
+/* overall styles */
+* {
+  font-family: "Inter";
+  font-family: "Manrope";
+  font-family: "Poppins";
+  margin: 0;
+  padding: 0;
+}
+
+/* shared styles */
+.primary-paragraph {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.btn-primary {
+  display: inline-flex;
+  padding: 10px 24px;
+  align-items: flex-start;
+  gap: 8px;
+  background: #E02C6D;
+}
+
+/* nav styles */
+nav {
+  margin: 80px 120px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-title {
+  color: #3a3a3a;
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+.nav ul li {
+  list-style: none;
+}
+
+/* influence section styles */
+.influence-container{
+    max-width: 1440px;
+    /* margin: 100px  120px; */
+    display: flex;
+    justify-content: space-evenly;
+    gap: 130px;
+}
+.influence-content{
+    text-align: flex-start;
+    margin: 140px 120px;
+    gap: 15px;
+}
+.prebook-btn{
+    margin-top: 20px;
+    border: 0;
+    border-radius: 40px;
+}
+.influence-img{
+    margin: auto;
+    background-image: url('../images/Circle\ design.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* media queries */
+/* media queries */
+/* media queries */
+/* media queries */
+/* media queries */
+
+/* for mobile devices */
+@media screen and (max-width: 576px) {
+  nav,
+  .nav ul {
+    flex-direction: column;
+  }
+  .influence-container{
+    flex-direction: column-reverse;
+  }
+  .influence-content{
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+  }
+}
