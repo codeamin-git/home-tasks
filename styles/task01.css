@@ -12,6 +12,7 @@
 
 /* shared styles */
 .primary-paragraph {
+  color: #3a3a3a;
   font-family: Poppins;
   font-size: 16px;
   font-weight: 600;
@@ -22,7 +23,7 @@
   padding: 10px 24px;
   align-items: flex-start;
   gap: 8px;
-  background: #E02C6D;
+  background: #e02c6d;
 }
 
 /* nav styles */
@@ -49,29 +50,75 @@ nav {
 }
 
 /* influence section styles */
-.influence-container{
-    max-width: 1440px;
-    /* margin: 100px  120px; */
-    display: flex;
-    justify-content: space-evenly;
-    gap: 130px;
+.influence-container {
+  max-width: 1440px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 130px;
 }
-.influence-content{
-    text-align: flex-start;
-    margin: 140px 120px;
-    gap: 15px;
+.influence-content {
+  text-align: flex-start;
+  margin: 140px 120px;
+  gap: 15px;
 }
-.prebook-btn{
-    margin-top: 20px;
-    border: 0;
-    border-radius: 40px;
+.prebook-btn {
+  margin-top: 20px;
+  border: 0;
+  border-radius: 40px;
 }
-.influence-img{
-    margin: auto;
-    background-image: url('../images/Circle\ design.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
+.influence-img {
+  margin: auto;
+  background-image: url("../images/Circle\ design.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* sponsors section styles */
+.sponsors-container {
+  width: 65%;
+  max-width: 1000px;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* popular collection styles */
+.card-heading {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+.popular-collection-container {
+  width: 80%;
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.card {
+  padding: 10px;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+.card-title {
+  color: #18191f;
+  font-size: 28px;
+  font-weight: 500;
+}
+.card-details {
+  color: #787885;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 700;
+}
+.card-price {
+  color: rgba(0, 0, 0, 0.87);
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 150%;
 }
 
 /* media queries */
@@ -86,12 +133,25 @@ nav {
   .nav ul {
     flex-direction: column;
   }
-  .influence-container{
+  .influence-container {
     flex-direction: column-reverse;
+    margin: 20px auto;
   }
-  .influence-content{
+  .influence-content {
     text-align: center;
     margin: 0;
     padding: 5px;
+  }
+  .influence-img {
+    margin: auto;
+  }
+  .sponsors-container {
+    margin: 50px auto;
+    width: 90%;
+    flex-wrap: wrap;
+  }
+  .popular-collection-container{
+    width: 90%;
+    grid-template-columns: 1fr;
   }
 }
